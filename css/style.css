@@ -1,0 +1,248 @@
+.container{
+    width: min(100%, 1440px);
+    margin: auto;
+}
+
+/* header */
+header{
+    display:flex;
+    justify-content: space-between;
+    background-color: #311500;
+    padding: 18px 94px;
+    align-items: center;
+}
+
+.logo_link{
+    width: 60px;
+    height: 60px;
+}
+
+.logo_img{
+    width: 100%;
+    height: 100%
+}
+
+.header_ul{
+    display: flex;
+    gap: 36px
+}
+.header_a{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: -0.44023728370666504px;
+    color: #DEE2EB;
+    transition: font-size 0.1s ease
+}
+
+.header_a:hover{
+    font-size: 20px;
+}
+.active{
+    color: #C46A2B;
+}
+
+
+.header_button{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 900;
+    line-height: 24px;
+    letter-spacing: -0.44023728370666504px;
+    color: #DEE2EB;
+    padding: 12px 18px;
+    background-color: #C46A2B;
+    border: 0px;
+    border-radius: 32px;
+    cursor: pointer;
+}
+
+.header_button:active{
+    box-shadow:  
+        inset 3px 2px 2px rgba(161, 161, 161, 0.926),
+        inset -3px -2px 2px white  
+}
+
+.header_burger{
+    display: none;
+}
+
+
+/* section1 */
+.section1{
+    height: 640px;
+    background-image: url(../images/cover-2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;  
+    align-items: center;
+    padding-top: 120px;
+}
+
+.shop_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    column-gap:32px;
+    /* background-color: #311500; */
+}
+
+.section_header{
+    font-family: Inter;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 56px;
+    letter-spacing: 0.10000000149011612px;
+    color: #FFFFFF;
+}
+
+.fa-circle-right{
+    font-size: 56px;
+    color: #FFFFFF;
+    /* background-color: #C46A2B; */
+    transition: color 0.1s ease;
+    cursor: pointer;
+}
+
+.fa-circle-right:hover{
+    color: #311500;
+}
+
+/* section2 */
+.section2{
+    background: #DEE2EB;
+    padding: 94px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+
+}
+.section2_header{
+    font-family: Inter;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    text-align: center;
+    color: #311500;
+    margin-bottom: 56px;
+}
+.cards_section{
+    /* width: 87%; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+}
+
+
+.product_card{
+    background: #311500;
+    padding: 8px 8px 16px;
+    width: 298px;
+    transition: box-shadow 0.2s ease;
+}
+.product_card:hover{
+    box-shadow: 
+        0 0 5px #311500,
+        0 0 10px #311500,
+        0 0 40px #311500;
+
+}
+
+.product_img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+
+.product_name{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #C46A2B;
+}
+
+.pricing_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 8px;
+}
+.price{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27px;
+    color: #DEE2EB;
+
+}
+
+.fa-cart-plus{
+    font-size: 15px;
+    color: #DEE2EB;
+    background-color: #C46A2B;
+    border: 1px solid #DEE2EB;
+    border-radius: 8px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.fa-cart-plus:active{
+    box-shadow:  
+    inset 2px 2px 2px rgba(161, 161, 161, 0.926),
+    inset -2px -2px 2px white  
+}
+
+/* footer */
+
+footer{
+    background-color: #311500;
+    padding-block: 94px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+
+}
+.footer_header{
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.10000000149011612px;
+    color: #C46A2B;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.footer_ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* .footer_li{
+    display: flex;
+    justify-content: center;
+
+} */
+
+.footer_a{
+    display: block;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    transition: color font-size text-shadow  0.2s ease;
+}
+
+.footer_a:hover{
+    font-size: 16px;
+    color: #c2a422;
+
+}

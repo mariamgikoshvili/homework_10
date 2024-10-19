@@ -1,0 +1,32 @@
+/* 480 - 320px */
+@media(max-width:480px){
+    /* header */
+    header{
+        padding-inline: 8px;
+    }
+     /* section1 */
+     .section1{
+        padding-top: 60px;
+        height: 320px;
+    }
+    .section_header{
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 40px;
+    }
+    /* section2 */
+    .section2{
+        padding-inline: 8px;
+    }
+    .section2_header{
+        font-size: 24px;
+        margin-bottom: 24px;
+    }
+    /* footer */
+    footer{
+        padding-inline: 180px;
+        flex-wrap: wrap;
+        gap:32px;
+    }
+   
+}
